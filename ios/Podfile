@@ -17,8 +17,8 @@ target 'NativePlayground' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable these next few lines.
-  use_flipper!
-  post_install do |installer|
+  use_flipper!({ 'Flipper-Folly' => '2.3.0' })
+    post_install do |installer|
     flipper_post_install(installer)
   end
 end
@@ -31,13 +31,3 @@ target 'NativePlayground-tvOS' do
     # Pods for testing
   end
 end
-
-post_install do |pi|
-	pi.pods_project.targets.each do |t|
-	  t.build_configurations.each do |bc|
-		if bc.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] == '9.0'
-		  bc.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
-		end
-	  end
-	end
-  end

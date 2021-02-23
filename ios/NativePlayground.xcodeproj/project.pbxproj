@@ -209,7 +209,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C8F3A3219D0332BFCCD3292D /* [CP] Embed Pods Frameworks */,
 				B1A2E0F1D0CB5491A6EBFC06 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -232,7 +231,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				A0F3D9ACB3B838C4DFB0FAE2 /* [CP] Embed Pods Frameworks */,
 				82F445D6B9079023460A66C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -499,24 +497,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NativePlayground/Pods-NativePlayground-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0F3D9ACB3B838C4DFB0FAE2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NativePlayground/Pods-NativePlayground-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NativePlayground/Pods-NativePlayground-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B1A2E0F1D0CB5491A6EBFC06 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,24 +513,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NativePlayground-NativePlaygroundTests/Pods-NativePlayground-NativePlaygroundTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C8F3A3219D0332BFCCD3292D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NativePlayground-NativePlaygroundTests/Pods-NativePlayground-NativePlaygroundTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NativePlayground-NativePlaygroundTests/Pods-NativePlayground-NativePlaygroundTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
